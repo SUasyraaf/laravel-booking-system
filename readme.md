@@ -59,4 +59,4 @@ This is an example laravel booking system
 
 ### Step
 
-    Create Slot -> Create Package -> Create Booking -> Confirm Booking -> Check In Booking ->[optional]Add Services -> Check Out Booking
+    Create Owner -> Create Store -> Create Slot -> Create Package -> Create Booking -> Confirm Booking -> Check In Booking ->[optional]Add Services -> Check Out Booking
