@@ -78,7 +78,8 @@
                                     </div>
                                     <div class="widget-content-left  ml-3 header-user-info">
                                         <div class="widget-heading">
-                                            User Name
+                                                
+                                                {{ Auth::check() ? Auth::user()->name : 'No User' }}
                                         </div>
                                         <div class="widget-subheading">
                                             User Position
@@ -189,7 +190,7 @@
                                             
                                         </ul>
                                     </li>
-                                    {{-- Paste here for new sidebar --}}
+                                    {{-- Paste here for new sidebar element--}}
                                 </ul>
                             </div>
                         </div>
