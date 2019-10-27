@@ -19,4 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::view('admin/index','admin/index');
+Route::view('admin/index','admin.index');
+
+Route::view('admin/create','admin.create');
+
+Route::view('blank','admin.blank');
+
