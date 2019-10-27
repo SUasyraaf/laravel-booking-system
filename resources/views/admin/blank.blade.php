@@ -23,9 +23,13 @@
 <link href={{ url("/main.css") }} rel="stylesheet"></head>
     <body>
         <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+
+            {{-- Navigation Bar Start --}}
+
             <div class="app-header header-shadow">
                 <div class="app-header__logo">
-                    <div class="logo-src"></div>
+                    {{-- <div class="logo-src"></div> --}}
+                    <h5>Booking System</h5>
                     <div class="header__pane ml-auto">
                         <div>
                             <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
@@ -62,16 +66,13 @@
                                     <div class="widget-content-left">
                                         <div class="btn-group">
                                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                                <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                                <img width="42" class="rounded-circle" src={{ url("assets/images/avatars/1.jpg") }} alt="">
                                                 <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                             </a>
                                             <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                                <button type="button" tabindex="0" class="dropdown-item">User Account</button>
-                                                <button type="button" tabindex="0" class="dropdown-item">Settings</button>
-                                                <h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                <button type="button" tabindex="0" class="dropdown-item">Actions</button>
+                                                <button type="button" tabindex="0" class="dropdown-item">My Account</button>
                                                 <div tabindex="-1" class="dropdown-divider"></div>
-                                                <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                                <button type="button" tabindex="0" class="dropdown-item">Logout</button>
                                             </div>
                                         </div>
                                     </div>
@@ -93,13 +94,16 @@
                         </div>        
                     </div>
                 </div>
-            </div>        
+            </div>  
+            {{-- Navigation Bar End --}} 
+                 
             {{-- Setting UI Here --}}
 
             
             <div class="app-main">
 
                     {{-- Sidebar Start --}}
+
                     <div class="app-sidebar sidebar-shadow">
                         <div class="app-header__logo">
                             <div class="logo-src"></div>
